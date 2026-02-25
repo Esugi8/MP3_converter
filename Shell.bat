@@ -13,5 +13,5 @@ if not exist .venv (
     exit /b
 )
 
-rem Open a new cmd window, activate .venv, and keep it open (/k)
-cmd /k ".venv\Scripts\activate.bat"
+rem Open a new cmd window, activate .venv, and then run the python script (/k keeps the window open)
+cmd /k ".venv\Scripts\activate.bat & python mp3_converter.py"
